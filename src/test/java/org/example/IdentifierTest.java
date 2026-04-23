@@ -47,8 +47,8 @@ class IdentifierTest {
     }
 
     @Test
-    void rejectsIdentifiersLongerThanFiveCharacters() {
-        td = "abc123";
+    void rejectsIdentifiersLongerThanSixCharacters() {
+        td = "abc1234";
         assertFalse(identifier.validateIdentifier(td));
     }
 
